@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+
+/*----------------- Hero Section --------------------*/
+.hero-section h1 {
+    font-family: 'Yeseva One', cursive;
+    color: #333333;
+    font-size: 50px;
+    padding: 0px 20px;
+    border-left: 5px solid #FF5959;
+}
+
+.hero-section h1>span {
+    color: #FFAD5A;
+}
+
+.hero-section .hero-content {
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 25px;
+}
+
+.hero-section .hero-text {
+    flex-shrink: 1;
+    margin: auto 0;
+}
+
+.hero-section .hero-image {
+    flex-shrink: 2;
+}
+
+.hero-section .hero-image img {
+    width: 100%;
+}
+
+.hero-section .container>p {
+    margin: 0;
+}
+
+/*----------------- Mission Section --------------------*/
+.mission-section {
+    margin-top: 55px;
+}
+
+.mission-section h2 {
+    color: #13103A;
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.mission-section h2>span {
+    color: #FFAD5A;
+
+}
+
+.mission-section .mission-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mission-section .mission-box-container .mission-box {
+    width: 320px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#mission-box-1 {
+    background-color: rgba(78, 158, 166, 0.1);
+}
+
+#mission-box-2 {
+    background-color: rgba(255, 89, 89, 0.1);
+}
+
+#mission-box-3 {
+    background-color: hsla(44, 100%, 92%, 0.7);
+}
+
+.mission-section .mission-box .mission-box-image img {
+    display: block;
+    width: 50%;
+}
+
+
+/*----------------- Develop Section --------------------*/
+.develop-section {
+    margin-top: 80px;
+}
+
+.develop-section .develop-flex {
+    display: flex;
+}
+
+.develop-section .develop-flex .develop-img {
+    flex-shrink: 5;
+}
+
+.develop-section .develop-flex .develop-img img {
+    width: 100%;
+}
+
+.develop-section .develop-flex .develop-text {
+    flex-shrink: 4;
+    margin: auto 0;
+    padding: 0 10px 0 55px;
+}
+
+/*----------------- Community Section --------------------*/
+.community-section {
+    margin-top: 50px;
+}
+
+.community-section .community-flex {
+    display: flex;
+}
+
+.community-section .community-flex .community-text {
+    flex-shrink: 4;
+    margin: auto 0;
+    padding: 0 55px 0 10px;
+}
+
+.community-section .community-flex .community-img {
+    flex-shrink: 5;
+}
+
+.community-section .community-flex .community-img img {
+    width: 100%;
+}
+
+/*----------------- Creative Section --------------------*/
+.creative-section {
+    border: 1px solid red;
+    background-color: red;
+}
+
+.creative-section h1 {
+    color: #fff;
+    text-align: center;
+}
+
+
+
+/*----------------- Footer Section --------------------*/
+footer {
+    height: 85px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0B0D17;
+}
+
+footer h2 {
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Lobster', cursive;
+    margin: 0 0 10px;
+}
+
+footer h2>span {
+    color: #FF5959;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+    font-size: 13px;
+}
+
+/*----------------- Utilities --------------------*/
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+    background-color: #FF5959;
+    border-radius: 5px;
+}
+
+.container {
+    width: 1080px;
+    margin: 0 20px;
+}
