@@ -25,12 +25,14 @@ body {
 }
 
 .hero-section .hero-text {
-    flex-shrink: 1;
+    /* flex-shrink: 1; */
+    width: 60%;
     margin: auto 0;
 }
 
 .hero-section .hero-image {
-    flex-shrink: 2;
+    /* flex-shrink: 2; */
+    width: 40%;
 }
 
 .hero-section .hero-image img {
@@ -60,12 +62,16 @@ body {
 .mission-section .mission-box-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    row-gap: 20px;
+    column-gap: 15px;
 }
 
 .mission-section .mission-box-container .mission-box {
     width: 320px;
+
     padding: 15px;
+    box-sizing: border-box;
     border-radius: 15px;
 }
 
@@ -97,7 +103,9 @@ body {
 }
 
 .develop-section .develop-flex .develop-img {
-    flex-shrink: 5;
+    /* flex-shrink: 5; */
+    display: block;
+    width: 40%;
 }
 
 .develop-section .develop-flex .develop-img img {
@@ -105,7 +113,8 @@ body {
 }
 
 .develop-section .develop-flex .develop-text {
-    flex-shrink: 4;
+    /* flex-shrink: 4; */
+    width: 60%;
     margin: auto 0;
     padding: 0 10px 0 55px;
 }
@@ -117,37 +126,59 @@ body {
 
 .community-section .community-flex {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .community-section .community-flex .community-text {
-    flex-shrink: 4;
+    /* flex-shrink: 4; */
+    width: 60%;
     margin: auto 0;
     padding: 0 55px 0 10px;
+    box-sizing: border-box;
 }
 
 .community-section .community-flex .community-img {
-    flex-shrink: 5;
+    /* flex-shrink: 5; */
+    display: block;
+    width: 40%;
+    box-sizing: border-box;
 }
 
 .community-section .community-flex .community-img img {
     width: 100%;
+    max-width: 420px;
 }
 
-/*----------------- Creative Section --------------------*/
-.creative-section {
-    border: 1px solid red;
-    background-color: red;
+/*----------------- Contact Section --------------------*/
+
+.contact-section {
+    margin-top: 60px;
 }
 
-.creative-section h1 {
-    color: #fff;
-    text-align: center;
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #00000033;
+
+}
+
+
+.send {
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 8px 12px;
+    border: none;
+    background: rgba(173, 216, 230, 0.7);
+    cursor: pointer;
 }
 
 
 
 /*----------------- Footer Section --------------------*/
 footer {
+    margin-top: 40px;
     height: 85px;
     text-align: center;
     display: flex;
@@ -173,6 +204,8 @@ footer p {
     font-size: 13px;
 }
 
+
+
 /*----------------- Utilities --------------------*/
 .button {
     display: inline-block;
@@ -184,6 +217,18 @@ footer p {
 }
 
 .container {
-    width: 1080px;
-    margin: 0 20px;
+    margin: 0 40px;
+}
+
+
+/* responsive */
+@media (max-width: 600px) {
+    .community-section .community-flex .community-text {
+        width: 100%;
+    }
+
+    .community-section .community-flex .community-img {
+        display: block;
+        width: 100%;
+    }
 }
