@@ -4,6 +4,10 @@ body {
     font-size: 16px;
 }
 
+* {
+    box-sizing: border-box;
+
+}
 
 /*----------------- Hero Section --------------------*/
 .hero-section h1 {
@@ -40,7 +44,7 @@ body {
 }
 
 .hero-section .container>p {
-    margin: 0;
+    margin: 20px 0 0;
 }
 
 /*----------------- Mission Section --------------------*/
@@ -68,8 +72,7 @@ body {
 }
 
 .mission-section .mission-box-container .mission-box {
-    width: 320px;
-
+    max-width: 300px;
     padding: 15px;
     box-sizing: border-box;
     border-radius: 15px;
@@ -100,20 +103,21 @@ body {
 
 .develop-section .develop-flex {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .develop-section .develop-flex .develop-img {
-    /* flex-shrink: 5; */
-    display: block;
     width: 40%;
+    display: flex;
+    justify-content: center;
 }
 
 .develop-section .develop-flex .develop-img img {
     width: 100%;
+    max-width: 420px;
 }
 
 .develop-section .develop-flex .develop-text {
-    /* flex-shrink: 4; */
     width: 60%;
     margin: auto 0;
     padding: 0 10px 0 55px;
@@ -130,16 +134,14 @@ body {
 }
 
 .community-section .community-flex .community-text {
-    /* flex-shrink: 4; */
     width: 60%;
     margin: auto 0;
     padding: 0 55px 0 10px;
-    box-sizing: border-box;
 }
 
 .community-section .community-flex .community-img {
-    /* flex-shrink: 5; */
-    display: block;
+    display: flex;
+    justify-content: center;
     width: 40%;
     box-sizing: border-box;
 }
@@ -222,13 +224,76 @@ footer p {
 
 
 /* responsive */
-@media (max-width: 600px) {
-    .community-section .community-flex .community-text {
+
+
+
+
+
+@media (max-width: 768px) {
+
+    p {
+        font-size: 15px;
+    }
+
+    /*----------------- Hero Section --------------------*/
+
+    .hero-section h1 {
+        font-size: 40px;
+    }
+
+    .hero-section .hero-content {
+        flex-wrap: wrap;
+    }
+
+    .hero-section .hero-text {
         width: 100%;
     }
 
-    .community-section .community-flex .community-img {
-        display: block;
+    .hero-section .hero-image {
         width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-section .hero-image img {
+        width: 60%;
+    }
+
+    /*----------------- Develop Section --------------------*/
+    .develop-section .develop-flex {
+        row-gap: 15px;
+    }
+
+    .develop-section .develop-flex .develop-img {
+        width: 100%;
+    }
+
+    .develop-section .develop-flex .develop-img img {
+        max-width: 375px;
+    }
+
+    .develop-section .develop-flex .develop-text {
+        width: 100%;
+        padding: 0 50px;
+    }
+
+    /*----------------- Community Section --------------------*/
+
+    .community-section .community-flex {
+        row-gap: 15px;
+        flex-direction: column-reverse;
+    }
+
+    .community-section .community-flex .community-text {
+        width: 100%;
+        padding: 0 50px;
+    }
+
+    .community-section .community-flex .community-img {
+        width: 100%;
+    }
+
+    .community-section .community-flex .community-img img {
+        max-width: 375px;
     }
 }
